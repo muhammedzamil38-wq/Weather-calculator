@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="module" src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form class="weather-form" onsubmit="event.preventDefault(); getWeatherData();">
+        <input type="text" id="cityInput" placeholder="Enter city name">
+        <p id="error-message" class="error-message"></p>
+        <button id="getWeatherButton" type="submit">Get Weather</button>
+    </form>
+
+    <div class="weather-info">
+        <h1 id="city_name"></h1>
+        <h4 id="temp"></h4>
+        <h4 id="feels_like"></h4>
+        <h4 id="humidity"></h4>
+        <h4 id="desc"></h4>
+    </div>
+</body>
+</html>
