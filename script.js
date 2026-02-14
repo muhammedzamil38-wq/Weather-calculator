@@ -58,10 +58,10 @@ async function getWeatherData() {
       }
       display(){
         city_name.textContent = this.city_name;
-        temp.textContent = `Temperature: ${this.temp} °C`;
-        feels_like.textContent = `Feels Like: ${this.feels_like} °C`;
-        humidity.textContent = `Humidity: ${this.humidity}%`;
-        description.textContent = `Description: ${this.desc}`;
+        temp.textContent += `${this.temp} °C`;
+        feels_like.textContent += `${this.feels_like} °C`;
+        humidity.textContent += `${this.humidity}%`;
+        description.textContent += `${this.desc}`;
       }
     }
    
